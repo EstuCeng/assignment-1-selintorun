@@ -1,0 +1,18 @@
+﻿<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            mc:Ignorable="d"
+            x:Class="PersonalHealthcareApplication.Tabbed"
+            xmlns:PersonalHealthcareApplication="clr-namespace:PersonalHealthcareApplication"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+    android:TabbedPage.ToolbarPlacement="Bottom"
+            BackgroundColor="#97BE11"
+            SelectedTabColor="#28590C"
+            UnselectedTabColor="#FBFCEB"
+            >
+    <PersonalHealthcareApplication:WelcomePage Title="Home"   IconImageSource="home.png" BackgroundColor="Black" ></PersonalHealthcareApplication:WelcomePage>
+    <PersonalHealthcareApplication:WelcomePage Title="Search" IconImageSource="loupe.png" ></PersonalHealthcareApplication:WelcomePage>
+    <PersonalHealthcareApplication:WelcomePage Title="Favorites" IconImageSource="heart.png" ></PersonalHealthcareApplication:WelcomePage>
+    <PersonalHealthcareApplication:WelcomePage Title="Profile" IconImageSource="userprofile.png" ></PersonalHealthcareApplication:WelcomePage>
+</TabbedPage>

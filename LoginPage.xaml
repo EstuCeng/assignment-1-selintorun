@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PersonalHealthcareApplication.LoginPage"
+             xmlns:local="clr-namespace:PersonalHealthcareApplication"
+             >
+    <ScrollView>
+        <StackLayout BackgroundColor="#FBFCEB">
+        <Image Source="{local:ImageResource PersonalHealthcareApplication.Images.pulse.png}" HeightRequest="120" WidthRequest="120" Margin="0 ,50,0,0"></Image>
+        <Label Text="Login" HorizontalOptions="Center" Margin="0,10,0,10" FontSize="24" TextColor="#97BE11" FontFamily="OpenSans" />
+        <Label Text="Enter your login details to access your account" WidthRequest="200" HorizontalTextAlignment="Center" HorizontalOptions="Center" FontSize="16" TextColor="#97BE11" FontFamily="OpenSans"></Label>
+        <Frame CornerRadius="15" IsClippedToBounds="True" BackgroundColor="#97BE11" HasShadow="True" BorderColor="Gray" Padding="0"   Margin="30,40,30,0" >
+                    <Entry x:Name="BorderlessEntry" Placeholder="E-mail" BackgroundColor="#97BE11" FontSize="16" FontFamily="OpenSans" TextColor="White" PlaceholderColor="White" Margin="10,0,10,0"></Entry>
+        </Frame>
+        <Frame CornerRadius="15" IsClippedToBounds="True" BackgroundColor="#97BE11" HasShadow="True" BorderColor="Gray" Padding="0" Margin="30,20,30,0">
+        <Entry Placeholder="Password" IsPassword="True" BackgroundColor="#97BE11" FontSize="16" FontFamily="OpenSans" TextColor="White" PlaceholderColor="White" Margin="10,0,10,0"></Entry>
+            </Frame>
+            <Frame x:Name="ButtonFrame" CornerRadius="15" IsClippedToBounds="True" BackgroundColor="#28590C" Padding="0" Margin="50,25,50,0" BorderColor="Gray" > 
+            <Button x:Name="loginbutton" Text="Log In"  BackgroundColor="Transparent" TextColor="White" FontFamily="OpenSans" FontSize="20" > </Button>
+        </Frame>
+        <StackLayout HorizontalOptions="End" VerticalOptions="End" Margin="0,40,10,0">
+            <Label LineBreakMode="WordWrap">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Not registered? Sign up " TextColor="#97BE11" FontFamily="OpenSans" FontSize="14" />
+                            <Span Text="Here!" x:Name="hereLabel" TextColor="Crimson" FontFamily="OpenSans" FontSize="14">
+                                <Span.GestureRecognizers >
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+            
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

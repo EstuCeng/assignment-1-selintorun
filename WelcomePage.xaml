@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PersonalHealthcareApplication"
+             x:Class="PersonalHealthcareApplication.WelcomePage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#FBFCEB">
+                <Frame BackgroundColor="#97BE11" HeightRequest="300" CornerRadius="45" Margin="0,-45,0,0">
+                    <StackLayout Margin="0,45,0,0" >
+                        <FlexLayout AlignItems="Center"  JustifyContent="SpaceBetween">
+                            <StackLayout>
+                                <Label Text="Good Evening" FontSize="30" FontFamily="OpenSans" TextColor="White"></Label>
+                                <Label Text="Selin!" FontSize="28" FontAttributes="Bold" FontFamily="OpenSans" TextColor="White"></Label>
+                            </StackLayout>
+                            <StackLayout>
+                                <Frame HorizontalOptions="End" HeightRequest="50" WidthRequest="50"  BackgroundColor="White" BorderColor="White" CornerRadius="100" HasShadow="True">
+                                    <Image Source="{local:ImageResource PersonalHealthcareApplication.Images.profile.png}" HeightRequest="180" WidthRequest="180"></Image>
+                                </Frame>
+                            </StackLayout>
+                        </FlexLayout>
+                        <Label Text="Your target for today is to keep positive mindset and smile to everyone you meet." WidthRequest="300" Margin="0,20,0,0"  HorizontalOptions="Start" FontSize="16" TextColor="White" FontFamily="OpenSans"></Label>
+                        <FlexLayout Margin="0,15,0,0">
+                            <Frame Padding="0"  Margin="0,0,20,0" BackgroundColor="#28590C" CornerRadius="25">
+                                <Button Text="MORE DETAILS" FontSize="10" FontFamily="OpenSans" BackgroundColor="Transparent" TextColor="White"></Button>
+                            </Frame>
+                            <Frame Padding="0" CornerRadius="25" BackgroundColor="#28590C">
+                                <Button Text="VIEW YOUR PROFILE" FontSize="10" FontFamily="OpenSans" BackgroundColor="Transparent" TextColor="White"></Button>
+                            </Frame>
+                        </FlexLayout>
+                    </StackLayout>
+
+                </Frame>
+                <StackLayout>
+                    <Label Text="What are you doing today?" Margin="30,0,0,0" TextColor="#28590C" FontFamily="OpenSans" FontSize="16"></Label>
+                    <Frame BorderColor="LightGray" WidthRequest="350" HorizontalOptions="Center" CornerRadius="25">
+                        <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="SpaceBetween">
+                            <Image  Source="{local:ImageResource PersonalHealthcareApplication.Images.dental-care.png}" HeightRequest="40" WidthRequest="40"></Image>
+                            <StackLayout Margin="10,0,0,0">
+                                <Label Text="Docktors" FontSize="12" FontFamily="OpenSans" TextColor="#28590C" ></Label>
+                                <Label Text="Teeth Checkup" FontSize="14" FontFamily="OpenSans" TextColor="#28590C" ></Label>
+                                <Label Text="Have an appointment today" FontSize="14" FontFamily="OpenSans" TextColor="#28590C" ></Label>
+                            </StackLayout>
+                            <Frame Padding="0" BackgroundColor="#DC1E0B" CornerRadius="40"  WidthRequest="55" HeightRequest="35">
+                                <Button Text="VIEW" TextColor="White" BackgroundColor="Transparent" FontSize="12"></Button>
+                            </Frame>
+                        </FlexLayout>
+                    </Frame>
+                    <Frame BorderColor="LightGray" WidthRequest="350" HorizontalOptions="Center" CornerRadius="25">
+                        <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="SpaceBetween">
+                            <StackLayout>
+                                <Image  Source="{local:ImageResource PersonalHealthcareApplication.Images.medicine.png}" HeightRequest="40" WidthRequest="40"></Image>
+                            </StackLayout>
+                            <StackLayout Margin="10,0,0,0">
+                                <Label Text="Pharmacy" FontSize="12" FontFamily="OpenSans" TextColor="#28590C" ></Label>
+                                <Label Text="Purchase Prescription" FontSize="14" FontFamily="OpenSans" TextColor="#28590C" ></Label>
+                                <Label Text="Don't forget to bring the list with you" FontSize="12" FontFamily="OpenSans" TextColor="#28590C" ></Label>
+                            </StackLayout>
+                            <Frame Padding="0" BackgroundColor="#28690C" CornerRadius="40"  WidthRequest="55" HeightRequest="35">
+                                <Button Text="SET" TextColor="White" BackgroundColor="Transparent" FontSize="12"></Button>
+                            </Frame>
+                        </FlexLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Visit a Specialists" Margin="30,0,0,0" TextColor="#28590C" FontFamily="OpenSans" FontSize="16"></Label>
+                    <Frame BorderColor="LightGray" WidthRequest="350" HorizontalOptions="Center" CornerRadius="25">
+                        <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="SpaceBetween">
+                            <Image  Source="{local:ImageResource PersonalHealthcareApplication.Images.profile.png}" HeightRequest="40" WidthRequest="40"></Image>
+                            <StackLayout Margin="10,0,0,0">
+                                <Label Text="Physician" FontSize="12" FontFamily="OpenSans" TextColor="#28590C" ></Label>
+                                <Label Text="Defne KAYA" FontSize="14" FontFamily="OpenSans" TextColor="#28590C" ></Label>
+                                <Grid WidthRequest="50">
+                                    <Image Grid.Column="0" Grid.Row="0" Source="{local:ImageResource PersonalHealthcareApplication.Images.yellow-star.png}" HeightRequest="10" WidthRequest="10" ></Image>
+                                    <Image Grid.Column="1" Grid.Row="0" Source="{local:ImageResource PersonalHealthcareApplication.Images.yellow-star.png}" HeightRequest="10" WidthRequest="10" ></Image>
+                                    <Image Grid.Column="2" Grid.Row="0" Source="{local:ImageResource PersonalHealthcareApplication.Images.yellow-star.png}" HeightRequest="10" WidthRequest="10" ></Image>
+                                    <Image Grid.Column="3" Grid.Row="0" Source="{local:ImageResource PersonalHealthcareApplication.Images.yellow-star.png}" HeightRequest="10" WidthRequest="10" ></Image>
+                                    <Image Grid.Column="4" Grid.Row="0" Source="{local:ImageResource PersonalHealthcareApplication.Images.star.png}" HeightRequest="10" WidthRequest="10" ></Image>
+                                </Grid>
+                            </StackLayout>
+                            <Frame Padding="0" BackgroundColor="#FFA820" CornerRadius="40"  WidthRequest="55" HeightRequest="35">
+                                <Button Text="BOOK" TextColor="White" BackgroundColor="Transparent" FontSize="12"></Button>
+                            </Frame>
+                        </FlexLayout>
+                    </Frame>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
